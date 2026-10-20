@@ -1,0 +1,35 @@
+:root {
+  --color-background: #040520;
+  --color-panel: #0B1033;
+  --color-accent: #7BE7DF;
+  --color-secondary: #A89AFF;
+  --color-gold: #C9A45C;
+  --color-text: #F4F6FF;
+  --color-muted: #A4ACCB;
+
+  --color-main-bg: linear-gradient(180deg, #040520 0%, #0B1033 100%);
+
+  /* --container-width: 1200px;
+  --border-radius: 12px; */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 20px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img, picture, svg {
+    max-width: 100%;
+    display: block;
+}
+
