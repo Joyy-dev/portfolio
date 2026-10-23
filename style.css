@@ -1,4 +1,5 @@
-/* inter-regular - latin */
+@layer global {
+    /* inter-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Inter';
@@ -137,3 +138,16 @@ img, picture, svg {
     width: min(calc(100% - 30px), calc(1200 / 16 * 1rem));
     margin-inline: auto;
 }
+}
+
+@layer component {
+    .visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+}
+
