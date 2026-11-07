@@ -104,6 +104,7 @@ body {
     font-size: var(--font-size-paragraph);
     list-style: 1.3;
     color: var(--c-muted);
+    padding-block-end: 50vh;
 }
 
 h1, h2, h3, h4 {
@@ -143,6 +144,29 @@ img, picture, svg {
 }
 
 @layer component { 
+    .topnav {
+        background-color: var(--c-background);
+        .topnav_links {
+            list-style-type: none;
+            padding: 0%;
+        }
+
+        .topnav__logo {
+            width: 100px;
+        }
+
+        .topnav__home {}
+
+        .topnav__item {}
+
+        .topnav__link {
+            font-weight: bold;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: var(--font-size-paragraph);
+            color: var(--c-text);
+        }
+    }
 }
 
 @layer utility {
