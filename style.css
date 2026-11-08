@@ -146,13 +146,23 @@ img, picture, svg {
 @layer component { 
     .topnav {
         background-color: var(--c-background);
+
+        .topnav__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         .topnav_links {
+            display: flex;
             list-style-type: none;
             padding: 0%;
+            gap: 20px;
+
         }
 
         .topnav__logo {
-            width: 100px;
+            /* width: 100px; */
         }
 
         .topnav__home {}
