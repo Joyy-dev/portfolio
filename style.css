@@ -66,6 +66,22 @@
 /* colors */
 :root {
     --c-main-bg: linear-gradient(180deg, #040520 0%, #0B1033 100%);
+    --c-header-bg: radial-gradient(
+      ellipse at 0% 100%,
+      rgba(155, 35, 170, 0.45) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 100% 100%,
+      rgba(100, 20, 130, 0.35) 0%,
+      transparent 40%
+    ),
+    linear-gradient(
+      110deg,
+      #10051b 0%,
+      #050817 50%,
+      #030616 100%
+    );
     --c-background: #040520;
     --c-panel: #0B1033;
     --c-accent: #7BE7DF;
@@ -75,10 +91,10 @@
     --c-muted: #a4accb;
     --c-transparent: transparent;
 
-    --color-header-bg: var(--color-background);
+    --color-header-bg: var(--c-header-bg);
     --color-footer-bg: var(--c-background);
     --color-site-bg: var(--c-main-bg);
-    --color-text-white: var(--color-text);
+    --color-text-white: var(--c-text);
     --color-text-muted: var(--c-muted);
     --color-text-main: var(--c-accent);
     --color-button-primary-bg: var(--c-accent);
@@ -145,12 +161,18 @@ img, picture, svg {
 
 @layer component { 
     .topnav {
-        background-color: var(--c-background);
+        background: var(--color-header-bg);
+        box-shadow: 0 8px 30px rgba(110, 30, 180, 0.12);
 
         .topnav__wrapper {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding-block: 10px;
+
+            @media (width >= calc(600 /16 * 1rem)) {
+                padding-block: 20px;
+            }
         }
 
         .topnav_links {
