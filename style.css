@@ -36,6 +36,7 @@
 
 /* Fonts */
 :root {
+    --fs-header-font: calc(13 / 16 * 1rem);
     --fs-14: calc(14 / 16 * 1rem);
     --fs-18: calc(18 / 16 * 1rem);
     --fs-28: calc(28 / 16 * 1rem);
@@ -47,6 +48,7 @@
     --fs-19: calc(19 / 16 * 1rem);
     --fs-17: calc(17 / 16 * 1rem);
 
+    --font-size-header-font: var(--fs-header-font);
     --font-size-paragraph: var(--fs-14);
     --font-size-h1: var(--fs-26);
     --font-size-h2: var(--fs-23);
@@ -55,6 +57,7 @@
     
 
     @media (width >= calc(600 /16 * 1rem)) {
+        --font-size-header-font: var(--fs-14);
         --font-size-paragraph: var(--fs-18);
         --font-size-h1: var(--fs-28);
         --font-size-h2: var(--fs-25);
@@ -184,7 +187,8 @@ img, picture, svg {
         }
 
         .topnav__logo {
-            /* width: 100px; */
+            width: clamp(100px, 15vw, 150px);
+            height: auto;
         }
 
         .topnav__home {}
@@ -198,25 +202,40 @@ img, picture, svg {
             font-size: var(--font-size-paragraph);
             color: var(--c-text);
         }
+
+        .topnav__cta {
+            font-weight: bold;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: var(--font-size-paragraph);
+            background: var(--c-header-bg);
+            color: var(--c-text);
+            border: 1px solid var(--c-text);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
     }
 }
 
 @layer utility {
-    .visually-hidden {
-        position: absolute;
-        left: -10000px;
-        top: auto;
-        width: 1px;
+    .visually-hidden:not(:focus, :active) {
+        clip: rect(0, 0, 0, 0);
+        clip-path: inset(50%);
         height: 1px;
-        overflow: hidden; 
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
 
-        &.skip-link:focus {
-            position: static;
-            left: auto;
-            width: auto;
-            height: auto;
-            overflow: visible;
-        }
+    .skip-link:focus {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1000;
+        padding: 1rem;
+        background: var(--c-accent);
+        color: var(--c-background);
     }
 }
 
