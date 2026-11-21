@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Management in Flutter: A Pragmatic Comparison · joyy_dev</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="../../assets/css/blog.css">
+    <script src="../../assets/js/main.js" defer></script>
+    <script src="../../assets/js/blog.js" defer></script>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml"/>
+</head>
+<body>
+    <a class="visually-hidden skip-link" href="#main">Skip to main content</a>
+
+    <header class="topnav" id="header">
+        <div class="wrapper topnav__wrapper">
+            <a href="../../index.html" class="topnav__home" aria-label="joyy-dev homepage">
+                <img src="../../assets/icons/joyy-dev-wordmark.svg" alt="joyy-dev logo" class="topnav__logo" width="150" height="34">
+            </a>
+
+            <button class="topnav__toggle" 
+                    type="button" 
+                    aria-label="Open navigation menu" 
+                    aria-expanded="false" 
+                    aria-controls="primary-nav">
+                <span class="topnav__hamburger" aria-hidden="true">
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                </span>
+            </button>
+
+            <nav class="topnav__nav" id="primary-nav" aria-label="Primary navigation">
+                <ul class="topnav_links">
+                    <li class="topnav__item">
+                        <a href="../../index.html" class="topnav__link">Home</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../../projects/index.html" class="topnav__link">Projects</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../../about.html" class="topnav__link">About</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../index.html" class="topnav__link topnav__link--active" aria-current="page">Blog</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../../contact.html" class="topnav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="topnav__actions">
+                    <a href="https://github.com/joyy-dev" target="_blank" rel="noopener noreferrer" class="topnav__cta">
+                        Github
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="topnav__backdrop" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+        <div class="wrapper">
+            <article class="article-container">
+                <a href="../index.html" class="article-back">← Back to Blog</a>
+
+                <header class="article-header">
+                    <span class="article-category">State Management</span>
+                    <h1 class="article-title">State Management in Flutter: A Pragmatic Comparison</h1>
+                    
+                    <div class="article-meta">
+                        <span>By Joyce (joyy_dev)</span>
+                        <span>•</span>
+                        <span>Published November 2026</span>
+                        <span>•</span>
+                        <span>11 min read</span>
+                    </div>
+
+                    <img src="../../assets/images/blog/flutter-state-management.webp" alt="Flutter state management comparison" class="article-hero-img">
+                </header>
+
+                <div class="article-content">
+                    <p>
+                        Ask five Flutter developers what state management package is best, and you will get six conflicting answers. Let's step away from community hype and analyze the technical tradeoffs of the three most popular options: Riverpod, BLoC, and Provider.
+                    </p>
+
+                    <h2>1. Flutter BLoC (Business Logic Component)</h2>
+                    <p>
+                        BLoC is event-driven and strictly enforces a unidirectional data flow. UI dispatches events, the Bloc processes them via streams, and yields immutable states.
+                    </p>
+                    <ul>
+                        <li><strong>Strengths:</strong> Complete separation of concerns, unrivaled auditability, and exceptionally easy to mock in unit tests.</li>
+                        <li><strong>Tradeoffs:</strong> Significant boilerplate code (events, states, bloc classes) for trivial state toggles.</li>
+                    </ul>
+
+                    <h2>2. Riverpod</h2>
+                    <p>
+                        Created by the author of Provider, Riverpod is a compile-safe, global reactive state management framework. It eliminates BuildContext dependencies and provides outstanding code generation capabilities.
+                    </p>
+                    <pre><code>@riverpod
+class Counter extends _$Counter {
+  @override
+  int build() => 0;
+
+  void increment() => state++;
+}</code></pre>
+                    <ul>
+                        <li><strong>Strengths:</strong> No context needed to read or invalidate state, automatic disposal of unused state, async providers handle caching out of the box.</li>
+                        <li><strong>Tradeoffs:</strong> Code-generation tooling requires build_runner setup.</li>
+                    </ul>
+
+                    <h2>Decision Framework</h2>
+                    <div class="article-callout">
+                        <p><strong>Recommendation:</strong> For enterprise applications with multi-developer teams where auditability is paramount, choose <strong>BLoC</strong>. For rapid development, modern code generators, and elegant caching, choose <strong>Riverpod</strong>.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper" style="text-align: center; padding-block: 3rem; border-top: 1px solid rgba(168, 154, 255, 0.12); color: var(--c-muted); font-size: 0.875rem;">
+            <p>&copy; 2026 joyy_dev. Built with Flutter passion and clean design.</p>
+        </div>
+    </footer>
+</body>
+</html>

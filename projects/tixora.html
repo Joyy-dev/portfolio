@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tixora Case Study · joyy_dev</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/projects.css">
+    <script src="../assets/js/main.js" defer></script>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml"/>
+</head>
+<body>
+    <a class="visually-hidden skip-link" href="#main">Skip to main content</a>
+
+    <header class="topnav" id="header">
+        <div class="wrapper topnav__wrapper">
+            <a href="../index.html" class="topnav__home" aria-label="joyy-dev homepage">
+                <img src="../assets/icons/joyy-dev-wordmark.svg" alt="joyy-dev logo" class="topnav__logo" width="150" height="34">
+            </a>
+
+            <button class="topnav__toggle" 
+                    type="button" 
+                    aria-label="Open navigation menu" 
+                    aria-expanded="false" 
+                    aria-controls="primary-nav">
+                <span class="topnav__hamburger" aria-hidden="true">
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                </span>
+            </button>
+
+            <nav class="topnav__nav" id="primary-nav" aria-label="Primary navigation">
+                <ul class="topnav_links">
+                    <li class="topnav__item">
+                        <a href="../index.html" class="topnav__link">Home</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="index.html" class="topnav__link topnav__link--active" aria-current="page">Projects</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../about.html" class="topnav__link">About</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../blog/index.html" class="topnav__link">Blog</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../contact.html" class="topnav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="topnav__actions">
+                    <a href="https://github.com/joyy-dev" target="_blank" rel="noopener noreferrer" class="topnav__cta">
+                        Github
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="topnav__backdrop" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+        <div class="wrapper">
+            <article class="case-study">
+                <a href="index.html" class="case-study__back">← Back to All Projects</a>
+
+                <header class="case-study__header">
+                    <span class="case-study__badge">Mobile Ticketing & Events</span>
+                    <h1 class="case-study__title">Tixora: Frictionless Live Event Passes</h1>
+                    <p class="case-study__lead">
+                        High-throughput event booking app with secure QR ticket validation, interactive seating charts, and Apple/Google Wallet integration.
+                    </p>
+
+                    <div class="case-study__meta">
+                        <div class="case-study__meta-item">
+                            <h4>Role</h4>
+                            <p>Lead Flutter Engineer</p>
+                        </div>
+                        <div class="case-study__meta-item">
+                            <h4>Tech Stack</h4>
+                            <p>Flutter, Dart, Stripe SDK, Cloud Functions</p>
+                        </div>
+                        <div class="case-study__meta-item">
+                            <h4>Key Tech</h4>
+                            <p>Encrypted QR Codes, Offline Passbook</p>
+                        </div>
+                    </div>
+                </header>
+
+                <img src="../assets/images/projects/tixora.webp" alt="Tixora ticketing app screens" class="case-study__hero-img">
+
+                <div class="case-study__content">
+                    <h2>Project Overview</h2>
+                    <p>
+                        Tixora provides event attendees with instant booking confirmation, seat previews, and dynamic rolling barcodes that prevent ticket counterfeiting and screenshot transfers.
+                    </p>
+
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li><strong>Custom Interactive Seating Map:</strong> Custom Canvas-rendered seat selection engine capable of rendering 5,000+ interactive seats at 60 FPS without frame drops.</li>
+                        <li><strong>Stripe Payment Sheet:</strong> One-tap checkout with Apple Pay and Google Pay integration.</li>
+                        <li><strong>Offline Pass Vault:</strong> Cryptographically signed ticket pass generated locally and cached for admission gate scanners even without cellular coverage.</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper" style="text-align: center; padding-block: 3rem; border-top: 1px solid rgba(168, 154, 255, 0.12); color: var(--c-muted); font-size: 0.875rem;">
+            <p>&copy; 2026 joyy_dev. Built with Flutter passion and clean design.</p>
+        </div>
+    </footer>
+</body>
+</html>

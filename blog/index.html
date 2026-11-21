@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog · joyy_dev · Flutter Engineering & Thoughts</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/blog.js" defer></script>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml"/>
+</head>
+<body>
+    <a class="visually-hidden skip-link" href="#main">Skip to main content</a>
+
+    <header class="topnav" id="header">
+        <div class="wrapper topnav__wrapper">
+            <a href="../index.html" class="topnav__home" aria-label="joyy-dev homepage">
+                <img src="../assets/icons/joyy-dev-wordmark.svg" alt="joyy-dev logo" class="topnav__logo" width="150" height="34">
+            </a>
+
+            <button class="topnav__toggle" 
+                    type="button" 
+                    aria-label="Open navigation menu" 
+                    aria-expanded="false" 
+                    aria-controls="primary-nav">
+                <span class="topnav__hamburger" aria-hidden="true">
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                </span>
+            </button>
+
+            <nav class="topnav__nav" id="primary-nav" aria-label="Primary navigation">
+                <ul class="topnav_links">
+                    <li class="topnav__item">
+                        <a href="../index.html" class="topnav__link">Home</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../projects/index.html" class="topnav__link">Projects</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../about.html" class="topnav__link">About</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="index.html" class="topnav__link topnav__link--active" aria-current="page">Blog</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../contact.html" class="topnav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="topnav__actions">
+                    <a href="https://github.com/joyy-dev" target="_blank" rel="noopener noreferrer" class="topnav__cta">
+                        Github
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="topnav__backdrop" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+        <div class="wrapper">
+            <header class="blog-hero">
+                <div class="hero__badge" style="display: inline-flex; margin-bottom: 1rem;">
+                    <span class="hero__badge-pulse" aria-hidden="true">
+                        <span class="hero__badge-dot"></span>
+                    </span>
+                    <span class="hero__badge-text">Writings & Technical Guides</span>
+                </div>
+                <h1 class="blog-hero__title">Thoughts on Flutter & Mobile Engineering</h1>
+                <p class="blog-hero__subtitle">
+                    Practical architecture tutorials, state management tradeoffs, and hands-on retrospectives from building real-world Flutter apps.
+                </p>
+            </header>
+
+            <section class="blog-grid">
+                
+                <!-- Article 1: Flutter Project Structure -->
+                <article class="blog-card">
+                    <div class="blog-card__media">
+                        <img src="../assets/images/blog/flutter-project-structure.webp" alt="Flutter project structure article thumbnail" class="blog-card__img">
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <span class="blog-card__category">Architecture</span>
+                            <span>•</span>
+                            <span>8 min read</span>
+                        </div>
+                        <h2 class="blog-card__title">How to Structure a Scalable Flutter Project in 2026</h2>
+                        <p class="blog-card__desc">
+                            A battle-tested folder architecture balancing feature modularity with clean layer separation for apps that scale effortlessly.
+                        </p>
+                        <a href="flutter-project-structure/index.html" class="blog-card__link">
+                            <span>Read article</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 2: Flutter State Management -->
+                <article class="blog-card">
+                    <div class="blog-card__media">
+                        <img src="../assets/images/blog/flutter-state-management.webp" alt="Flutter state management article thumbnail" class="blog-card__img">
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <span class="blog-card__category">State Management</span>
+                            <span>•</span>
+                            <span>11 min read</span>
+                        </div>
+                        <h2 class="blog-card__title">State Management in Flutter: A Pragmatic Comparison</h2>
+                        <p class="blog-card__desc">
+                            Choosing between Riverpod, BLoC, and Provider without falling into dogma. Real tradeoffs, testability, and code examples.
+                        </p>
+                        <a href="flutter-state-management/index.html" class="blog-card__link">
+                            <span>Read article</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 3: Lessons from Building Taskify -->
+                <article class="blog-card">
+                    <div class="blog-card__media">
+                        <img src="../assets/images/projects/taskify.webp" alt="Taskify app screenshot" class="blog-card__img">
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <span class="blog-card__category">Case Study</span>
+                            <span>•</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h2 class="blog-card__title">5 Hard-Earned Lessons from Building Taskify</h2>
+                        <p class="blog-card__desc">
+                            Insights on gesture physics, 60fps rendering, offline local caching, and why UX micro-interactions define app retention.
+                        </p>
+                        <a href="lessons-from-building-taskify/index.html" class="blog-card__link">
+                            <span>Read article</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper" style="text-align: center; padding-block: 3rem; border-top: 1px solid rgba(168, 154, 255, 0.12); color: var(--c-muted); font-size: 0.875rem;">
+            <p>&copy; 2026 joyy_dev. Built with Flutter passion and clean design.</p>
+        </div>
+    </footer>
+</body>
+</html>

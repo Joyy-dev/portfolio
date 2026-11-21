@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Structure a Scalable Flutter Project in 2026 · joyy_dev</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="../../assets/css/blog.css">
+    <script src="../../assets/js/main.js" defer></script>
+    <script src="../../assets/js/blog.js" defer></script>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml"/>
+</head>
+<body>
+    <a class="visually-hidden skip-link" href="#main">Skip to main content</a>
+
+    <header class="topnav" id="header">
+        <div class="wrapper topnav__wrapper">
+            <a href="../../index.html" class="topnav__home" aria-label="joyy-dev homepage">
+                <img src="../../assets/icons/joyy-dev-wordmark.svg" alt="joyy-dev logo" class="topnav__logo" width="150" height="34">
+            </a>
+
+            <button class="topnav__toggle" 
+                    type="button" 
+                    aria-label="Open navigation menu" 
+                    aria-expanded="false" 
+                    aria-controls="primary-nav">
+                <span class="topnav__hamburger" aria-hidden="true">
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                </span>
+            </button>
+
+            <nav class="topnav__nav" id="primary-nav" aria-label="Primary navigation">
+                <ul class="topnav_links">
+                    <li class="topnav__item">
+                        <a href="../../index.html" class="topnav__link">Home</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../../projects/index.html" class="topnav__link">Projects</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../../about.html" class="topnav__link">About</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../index.html" class="topnav__link topnav__link--active" aria-current="page">Blog</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../../contact.html" class="topnav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="topnav__actions">
+                    <a href="https://github.com/joyy-dev" target="_blank" rel="noopener noreferrer" class="topnav__cta">
+                        Github
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="topnav__backdrop" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+        <div class="wrapper">
+            <article class="article-container">
+                <a href="../index.html" class="article-back">← Back to Blog</a>
+
+                <header class="article-header">
+                    <span class="article-category">Architecture</span>
+                    <h1 class="article-title">How to Structure a Scalable Flutter Project in 2026</h1>
+                    
+                    <div class="article-meta">
+                        <span>By Joyce (joyy_dev)</span>
+                        <span>•</span>
+                        <span>Published November 2026</span>
+                        <span>•</span>
+                        <span>8 min read</span>
+                    </div>
+
+                    <img src="../../assets/images/blog/flutter-project-structure.webp" alt="Flutter project structure illustration" class="article-hero-img">
+                </header>
+
+                <div class="article-content">
+                    <p>
+                        One of the first challenges developers face when transitioning from toy projects to production-grade Flutter apps is file organization. In the early days of a project, dumping screens into a <code>screens/</code> folder and widgets into <code>widgets/</code> feels productive. But once your app hits 20+ screens, that naive structure turns into a maze.
+                    </p>
+
+                    <h2>The Flaw of "Layer-First" Architecture</h2>
+                    <p>
+                        In a strict layer-first setup, your root <code>lib/</code> contains:
+                    </p>
+                    <pre><code>lib/
+├── models/
+├── views/
+├── controllers/
+└── services/</code></pre>
+                    <p>
+                        When working on the "Profile" feature, you are constantly hopping between four distant folders. Related code is scattered, and deleting or refactoring a single feature requires hunting down files across the entire codebase.
+                    </p>
+
+                    <h2>The Solution: Feature-First Architecture</h2>
+                    <p>
+                        In a feature-first approach, each business feature owns its presentation, state logic, and domain entities:
+                    </p>
+                    <pre><code>lib/
+├── core/
+│   ├── theme/
+│   ├── network/
+│   └── utils/
+├── features/
+│   ├── auth/
+│   │   ├── data/
+│   │   ├── domain/
+│   │   └── presentation/
+│   ├── booking/
+│   └── profile/
+└── app.dart</code></pre>
+
+                    <div class="article-callout">
+                        <p><strong>Golden Rule:</strong> If a widget or utility is only used by one feature, it stays inside that feature's directory. Only elevate to <code>core/</code> or <code>shared/</code> when two distinct features depend on it.</p>
+                    </div>
+
+                    <h2>Key Takeaways</h2>
+                    <ul>
+                        <li>Keep feature code colocated to make deleting and modifying features trivial.</li>
+                        <li>Maintain a clear boundary between presentation and data sources.</li>
+                        <li>Use Barrel exports (<code>index.dart</code>) carefully to prevent circular dependencies.</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper" style="text-align: center; padding-block: 3rem; border-top: 1px solid rgba(168, 154, 255, 0.12); color: var(--c-muted); font-size: 0.875rem;">
+            <p>&copy; 2026 joyy_dev. Built with Flutter passion and clean design.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Tracker Case Study · joyy_dev</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/projects.css">
+    <script src="../assets/js/main.js" defer></script>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml"/>
+</head>
+<body>
+    <a class="visually-hidden skip-link" href="#main">Skip to main content</a>
+
+    <header class="topnav" id="header">
+        <div class="wrapper topnav__wrapper">
+            <a href="../index.html" class="topnav__home" aria-label="joyy-dev homepage">
+                <img src="../assets/icons/joyy-dev-wordmark.svg" alt="joyy-dev logo" class="topnav__logo" width="150" height="34">
+            </a>
+
+            <button class="topnav__toggle" 
+                    type="button" 
+                    aria-label="Open navigation menu" 
+                    aria-expanded="false" 
+                    aria-controls="primary-nav">
+                <span class="topnav__hamburger" aria-hidden="true">
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                </span>
+            </button>
+
+            <nav class="topnav__nav" id="primary-nav" aria-label="Primary navigation">
+                <ul class="topnav_links">
+                    <li class="topnav__item">
+                        <a href="../index.html" class="topnav__link">Home</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="index.html" class="topnav__link topnav__link--active" aria-current="page">Projects</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../about.html" class="topnav__link">About</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../blog/index.html" class="topnav__link">Blog</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../contact.html" class="topnav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="topnav__actions">
+                    <a href="https://github.com/joyy-dev" target="_blank" rel="noopener noreferrer" class="topnav__cta">
+                        Github
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="topnav__backdrop" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+        <div class="wrapper">
+            <article class="case-study">
+                <a href="index.html" class="case-study__back">← Back to All Projects</a>
+
+                <header class="case-study__header">
+                    <span class="case-study__badge">Health & Fitness Companion</span>
+                    <h1 class="case-study__title">Workout Tracker: Data-Driven Habit Building</h1>
+                    <p class="case-study__lead">
+                        An offline-first strength training log and progress visualizer optimized for minimal gym friction and rapid entry.
+                    </p>
+
+                    <div class="case-study__meta">
+                        <div class="case-study__meta-item">
+                            <h4>Role</h4>
+                            <p>Sole Developer & UI Designer</p>
+                        </div>
+                        <div class="case-study__meta-item">
+                            <h4>Tech Stack</h4>
+                            <p>Flutter, Hive DB, FL Chart</p>
+                        </div>
+                        <div class="case-study__meta-item">
+                            <h4>Architecture</h4>
+                            <p>Offline-First, Riverpod</p>
+                        </div>
+                    </div>
+                </header>
+
+                <img src="../assets/images/projects/workout-tracker.webp" alt="Workout Tracker interface screens" class="case-study__hero-img">
+
+                <div class="case-study__content">
+                    <h2>Project Overview</h2>
+                    <p>
+                        Most workout trackers are bloated with unnecessary social features that slow down athletes during a workout. Workout Tracker was designed specifically for lightning-fast set logging, rest timing, and instant 1-Rep-Max estimation.
+                    </p>
+
+                    <h2>Key Highlights</h2>
+                    <ul>
+                        <li><strong>Zero Latency Logging:</strong> Local embedded Hive database guarantees immediate response even inside basement gym facilities with zero cellular reception.</li>
+                        <li><strong>Smart Rest Timer:</strong> Audio and haptic alerts that trigger even with the phone locked or running in the background.</li>
+                        <li><strong>Volume Progression Charts:</strong> Dynamic interactive charts visualizing weekly tonnage and progressive overload across major lifts.</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper" style="text-align: center; padding-block: 3rem; border-top: 1px solid rgba(168, 154, 255, 0.12); color: var(--c-muted); font-size: 0.875rem;">
+            <p>&copy; 2026 joyy_dev. Built with Flutter passion and clean design.</p>
+        </div>
+    </footer>
+</body>
+</html>

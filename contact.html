@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact · joyy_dev · Let's Connect</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/contact.js" defer></script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+</head>
+<body>
+    <a class="visually-hidden skip-link" href="#main">Skip to main content</a>
+
+    <header class="topnav" id="header">
+        <div class="wrapper topnav__wrapper">
+            <a href="index.html" class="topnav__home" aria-label="joyy-dev homepage">
+                <img src="assets/icons/joyy-dev-wordmark.svg" alt="joyy-dev logo" class="topnav__logo" width="150" height="34">
+            </a>
+
+            <button class="topnav__toggle" 
+                    type="button" 
+                    aria-label="Open navigation menu" 
+                    aria-expanded="false" 
+                    aria-controls="primary-nav">
+                <span class="topnav__hamburger" aria-hidden="true">
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                </span>
+            </button>
+
+            <nav class="topnav__nav" id="primary-nav" aria-label="Primary navigation">
+                <ul class="topnav_links">
+                    <li class="topnav__item">
+                        <a href="index.html" class="topnav__link">Home</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="projects/index.html" class="topnav__link">Projects</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="about.html" class="topnav__link">About</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="blog/index.html" class="topnav__link">Blog</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="contact.html" class="topnav__link topnav__link--active" aria-current="page">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="topnav__actions">
+                    <a href="https://github.com/joyy-dev" target="_blank" rel="noopener noreferrer" class="topnav__cta">
+                        Github
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="topnav__backdrop" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+        <section class="section" style="padding-block: 4rem 6rem;">
+            <div class="wrapper" style="max-width: 900px;">
+                <div style="text-align: center; margin-bottom: 3.5rem;">
+                    <div class="hero__badge" style="display: inline-flex; margin-bottom: 1rem;">
+                        <span class="hero__badge-pulse" aria-hidden="true">
+                            <span class="hero__badge-dot"></span>
+                        </span>
+                        <span class="hero__badge-text">Available for mobile opportunities & collaborations</span>
+                    </div>
+                    <h1 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.2; margin-bottom: 1rem;">
+                        Let's build something <span style="background: linear-gradient(135deg, var(--c-accent) 0%, #B6A7FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">meaningful.</span>
+                    </h1>
+                    <p style="font-size: 1.15rem; color: var(--c-muted); max-width: 600px; margin-inline: auto;">
+                        Whether you have a project idea, want to talk Flutter architecture, or explore potential opportunities, I'd love to hear from you.
+                    </p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; align-items: start;">
+                    
+                    <!-- Direct Contact Details -->
+                    <div style="background: linear-gradient(145deg, rgba(11, 16, 51, 0.8) 0%, rgba(4, 5, 32, 0.9) 100%); border: 1px solid rgba(168, 154, 255, 0.16); border-radius: 16px; padding: 2rem;">
+                        <h2 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--c-text);">Get in Touch</h2>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--c-muted); display: block; margin-bottom: 0.5rem;">Direct Email</span>
+                            <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; background: rgba(168, 154, 255, 0.08); padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid rgba(168, 154, 255, 0.15);">
+                                <span style="color: var(--c-text); font-weight: 600; font-size: 0.95rem;">joyceava874@gmail.com</span>
+                                <button type="button" id="copyEmailBtn" data-email="joyceava874@gmail.com" style="background: var(--c-accent); color: var(--c-background); border: none; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: opacity 0.2s;">
+                                    Copy
+                                </button>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--c-muted); display: block; margin-bottom: 0.5rem;">Social & Code</span>
+                            <a href="https://github.com/joyy-dev" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.75rem; color: var(--c-text); font-weight: 600; text-decoration: none; padding: 0.75rem 1rem; background: rgba(168, 154, 255, 0.08); border-radius: 8px; border: 1px solid rgba(168, 154, 255, 0.15); width: 100%;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>github.com/joyy-dev</span>
+                            </a>
+                        </div>
+
+                        <div>
+                            <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--c-muted); display: block; margin-bottom: 0.5rem;">Location & Timezone</span>
+                            <p style="color: var(--c-text); font-weight: 500; font-size: 0.95rem;">Available for remote contracts and worldwide collaboration.</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Message Form -->
+                    <div style="background: linear-gradient(145deg, rgba(11, 16, 51, 0.8) 0%, rgba(4, 5, 32, 0.9) 100%); border: 1px solid rgba(168, 154, 255, 0.16); border-radius: 16px; padding: 2rem;">
+                        <h2 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--c-text);">Send a Message</h2>
+                        
+                        <form id="contactForm" style="display: flex; flex-direction: column; gap: 1.25rem;">
+                            <div>
+                                <label for="senderName" style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--c-text); margin-bottom: 0.4rem;">Your Name</label>
+                                <input type="text" id="senderName" name="name" required placeholder="Alex Morgan" style="width: 100%; padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid rgba(168, 154, 255, 0.2); background: #040520; color: var(--c-text); font-family: inherit; font-size: 0.95rem;">
+                            </div>
+
+                            <div>
+                                <label for="senderEmail" style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--c-text); margin-bottom: 0.4rem;">Email Address</label>
+                                <input type="email" id="senderEmail" name="email" required placeholder="alex@example.com" style="width: 100%; padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid rgba(168, 154, 255, 0.2); background: #040520; color: var(--c-text); font-family: inherit; font-size: 0.95rem;">
+                            </div>
+
+                            <div>
+                                <label for="messageText" style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--c-text); margin-bottom: 0.4rem;">Message</label>
+                                <textarea id="messageText" name="message" rows="4" required placeholder="Tell me about your project or inquiry..." style="width: 100%; padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid rgba(168, 154, 255, 0.2); background: #040520; color: var(--c-text); font-family: inherit; font-size: 0.95rem; resize: vertical;"></textarea>
+                            </div>
+
+                            <button type="submit" class="hero__btn hero__btn--primary" style="border: none; cursor: pointer; padding: 0.85rem; background: var(--c-accent); color: var(--c-background); border-radius: 8px; font-weight: 700; font-size: 1rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: opacity 0.2s;">
+                                <span>Send Message</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+
+                            <p id="formStatus" style="display: none; font-size: 0.9rem; text-align: center; margin-top: 0.5rem;"></p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper" style="text-align: center; padding-block: 3rem; border-top: 1px solid rgba(168, 154, 255, 0.12); color: var(--c-muted); font-size: 0.875rem;">
+            <p>&copy; 2026 joyy_dev. Built with Flutter passion and clean design.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found · joyy_dev</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/main.js" defer></script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+</head>
+<body>
+    <a class="visually-hidden skip-link" href="#main">Skip to main content</a>
+
+    <header class="topnav" id="header">
+        <div class="wrapper topnav__wrapper">
+            <a href="index.html" class="topnav__home" aria-label="joyy-dev homepage">
+                <img src="assets/icons/joyy-dev-wordmark.svg" alt="joyy-dev logo" class="topnav__logo" width="150" height="34">
+            </a>
+
+            <button class="topnav__toggle" 
+                    type="button" 
+                    aria-label="Open navigation menu" 
+                    aria-expanded="false" 
+                    aria-controls="primary-nav">
+                <span class="topnav__hamburger" aria-hidden="true">
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                </span>
+            </button>
+
+            <nav class="topnav__nav" id="primary-nav" aria-label="Primary navigation">
+                <ul class="topnav_links">
+                    <li class="topnav__item">
+                        <a href="index.html" class="topnav__link">Home</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="projects/index.html" class="topnav__link">Projects</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="about.html" class="topnav__link">About</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="blog/index.html" class="topnav__link">Blog</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="contact.html" class="topnav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="topnav__actions">
+                    <a href="https://github.com/joyy-dev" target="_blank" rel="noopener noreferrer" class="topnav__cta">
+                        Github
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="topnav__backdrop" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+        <section class="section" style="padding-block: 8rem 4rem; text-align: center;">
+            <div class="wrapper">
+                <span style="font-size: 5rem; font-weight: 800; color: var(--c-accent); display: block; line-height: 1; margin-bottom: 1rem;">404</span>
+                <h1 style="font-size: 2.25rem; font-weight: 700; margin-bottom: 1rem;">Page Not Found</h1>
+                <p style="max-width: 500px; margin-inline: auto; margin-bottom: 2.5rem; color: var(--c-muted);">
+                    The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="index.html" class="hero__btn hero__btn--primary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 1.75rem; background: var(--c-accent); color: var(--c-background); border-radius: 8px; font-weight: 700;">
+                        <span>Return Home</span>
+                    </a>
+                    <a href="projects/index.html" class="hero__btn hero__btn--secondary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 1.75rem; border: 1px solid rgba(168,154,255,0.3); color: var(--c-text); border-radius: 8px; font-weight: 600;">
+                        <span>View Projects</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper" style="text-align: center; padding-block: 3rem; border-top: 1px solid rgba(168, 154, 255, 0.12); color: var(--c-muted); font-size: 0.875rem;">
+            <p>&copy; 2026 joyy_dev. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

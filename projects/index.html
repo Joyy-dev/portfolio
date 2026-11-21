@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects · joyy_dev · Flutter Applications</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/projects.css">
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/projects.js" defer></script>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml"/>
+</head>
+<body>
+    <a class="visually-hidden skip-link" href="#main">Skip to main content</a>
+
+    <header class="topnav" id="header">
+        <div class="wrapper topnav__wrapper">
+            <a href="../index.html" class="topnav__home" aria-label="joyy-dev homepage">
+                <img src="../assets/icons/joyy-dev-wordmark.svg" alt="joyy-dev logo" class="topnav__logo" width="150" height="34">
+            </a>
+
+            <button class="topnav__toggle" 
+                    type="button" 
+                    aria-label="Open navigation menu" 
+                    aria-expanded="false" 
+                    aria-controls="primary-nav">
+                <span class="topnav__hamburger" aria-hidden="true">
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                </span>
+            </button>
+
+            <nav class="topnav__nav" id="primary-nav" aria-label="Primary navigation">
+                <ul class="topnav_links">
+                    <li class="topnav__item">
+                        <a href="../index.html" class="topnav__link">Home</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="index.html" class="topnav__link topnav__link--active" aria-current="page">Projects</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../about.html" class="topnav__link">About</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../blog/index.html" class="topnav__link">Blog</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../contact.html" class="topnav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="topnav__actions">
+                    <a href="https://github.com/joyy-dev" target="_blank" rel="noopener noreferrer" class="topnav__cta">
+                        Github
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="topnav__backdrop" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+        <div class="wrapper">
+            <header class="projects-hero">
+                <div class="hero__badge" style="display: inline-flex; margin-bottom: 1rem;">
+                    <span class="hero__badge-pulse" aria-hidden="true">
+                        <span class="hero__badge-dot"></span>
+                    </span>
+                    <span class="hero__badge-text">Showcase · Mobile Applications</span>
+                </div>
+                <h1 class="projects-hero__title">Featured Mobile Projects</h1>
+                <p class="projects-hero__subtitle">
+                    A curated selection of cross-platform apps built with Flutter, focusing on performance, clean state flow, and polished UX.
+                </p>
+
+                <!-- Filter Controls -->
+                <div class="projects-filter">
+                    <button class="projects-filter__btn is-active" data-filter="all">All Projects</button>
+                    <button class="projects-filter__btn" data-filter="flutter">Flutter</button>
+                    <button class="projects-filter__btn" data-filter="firebase">Firebase</button>
+                    <button class="projects-filter__btn" data-filter="tool">Tools & Analytics</button>
+                </div>
+            </header>
+
+            <!-- Projects Grid -->
+            <section class="projects-grid">
+                
+                <!-- 1. LocalFixers -->
+                <article class="project-card" data-category="flutter firebase">
+                    <div class="project-card__media">
+                        <img src="../assets/images/projects/localfixers.webp" alt="LocalFixers App preview" class="project-card__img">
+                    </div>
+                    <div class="project-card__body">
+                        <div class="project-card__tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Geolocation</span>
+                        </div>
+                        <h2 class="project-card__title">LocalFixers</h2>
+                        <p class="project-card__desc">
+                            On-demand home services booking platform connecting homeowners with vetted local technicians in real-time.
+                        </p>
+                        <a href="localfixers.html" class="project-card__link">
+                            <span>Read case study</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 2. Workout Tracker -->
+                <article class="project-card" data-category="flutter">
+                    <div class="project-card__media">
+                        <img src="../assets/images/projects/workout-tracker.webp" alt="Workout Tracker preview" class="project-card__img">
+                    </div>
+                    <div class="project-card__body">
+                        <div class="project-card__tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Offline-First</span>
+                            <span class="project-tag">Hive DB</span>
+                        </div>
+                        <h2 class="project-card__title">Workout Tracker</h2>
+                        <p class="project-card__desc">
+                            Intuitive workout logging companion with routine planning, superset tracking, and interactive progress analytics.
+                        </p>
+                        <a href="workout-tracker.html" class="project-card__link">
+                            <span>Read case study</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 3. Tixora -->
+                <article class="project-card" data-category="flutter firebase">
+                    <div class="project-card__media">
+                        <img src="../assets/images/projects/tixora.webp" alt="Tixora App preview" class="project-card__img">
+                    </div>
+                    <div class="project-card__body">
+                        <div class="project-card__tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Stripe</span>
+                            <span class="project-tag">QR Tickets</span>
+                        </div>
+                        <h2 class="project-card__title">Tixora</h2>
+                        <p class="project-card__desc">
+                            Event discovery and frictionless mobile ticketing platform with real-time seat reservation and digital pass wallet.
+                        </p>
+                        <a href="tixora.html" class="project-card__link">
+                            <span>Read case study</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 4. Taskify -->
+                <article class="project-card" data-category="flutter">
+                    <div class="project-card__media">
+                        <img src="../assets/images/projects/taskify.webp" alt="Taskify App preview" class="project-card__img">
+                    </div>
+                    <div class="project-card__body">
+                        <div class="project-card__tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Riverpod</span>
+                            <span class="project-tag">Productivity</span>
+                        </div>
+                        <h2 class="project-card__title">Taskify</h2>
+                        <p class="project-card__desc">
+                            Focused task management app with smart reminders, priority matrices, and fluid micro-interactions.
+                        </p>
+                        <a href="taskify.html" class="project-card__link">
+                            <span>Read case study</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 5. GS Analyzer -->
+                <article class="project-card" data-category="tool flutter">
+                    <div class="project-card__media">
+                        <img src="../assets/images/projects/gs-analyzer.webp" alt="GS Analyzer preview" class="project-card__img">
+                    </div>
+                    <div class="project-card__body">
+                        <div class="project-card__tags">
+                            <span class="project-tag">Flutter Desktop / Web</span>
+                            <span class="project-tag">Google Sheets API</span>
+                            <span class="project-tag">Data Viz</span>
+                        </div>
+                        <h2 class="project-card__title">GS Analyzer</h2>
+                        <p class="project-card__desc">
+                            Lightweight data analytics dashboard that syncs live with Google Sheets to visualize trends and anomalies.
+                        </p>
+                        <a href="gs-analyzer.html" class="project-card__link">
+                            <span>Read case study</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper" style="text-align: center; padding-block: 3rem; border-top: 1px solid rgba(168, 154, 255, 0.12); color: var(--c-muted); font-size: 0.875rem;">
+            <p>&copy; 2026 joyy_dev. Built with Flutter passion and clean design.</p>
+        </div>
+    </footer>
+</body>
+</html>

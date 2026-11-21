@@ -1,0 +1,63 @@
+/* ==========================================================================
+   joyy_dev Portfolio - Responsive Utilities & Breakpoints
+   ========================================================================== */
+
+/* Tablet & Smaller Screens (< 992px / 62rem) */
+@media (max-width: 62rem) {
+  .site-header__nav {
+    display: none;
+  }
+
+  .site-header__nav.is-open {
+    display: flex;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding-block: 3.5rem;
+  }
+}
+
+/* Mobile Screens (< 768px / 48rem) */
+@media (max-width: 48rem) {
+  :root {
+    --fs-h1: 2rem;
+    --fs-h2: 1.65rem;
+    --fs-h3: 1.35rem;
+  }
+
+  .wrapper {
+    width: min(calc(100% - 1.5rem), 75rem);
+  }
+
+  .section {
+    padding-block: 2.5rem;
+  }
+
+  .hero__actions,
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Small Handheld (< 480px / 30rem) */
+@media (max-width: 30rem) {
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+}

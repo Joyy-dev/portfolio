@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Hard-Earned Lessons from Building Taskify · joyy_dev</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="../../assets/css/blog.css">
+    <script src="../../assets/js/main.js" defer></script>
+    <script src="../../assets/js/blog.js" defer></script>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml"/>
+</head>
+<body>
+    <a class="visually-hidden skip-link" href="#main">Skip to main content</a>
+
+    <header class="topnav" id="header">
+        <div class="wrapper topnav__wrapper">
+            <a href="../../index.html" class="topnav__home" aria-label="joyy-dev homepage">
+                <img src="../../assets/icons/joyy-dev-wordmark.svg" alt="joyy-dev logo" class="topnav__logo" width="150" height="34">
+            </a>
+
+            <button class="topnav__toggle" 
+                    type="button" 
+                    aria-label="Open navigation menu" 
+                    aria-expanded="false" 
+                    aria-controls="primary-nav">
+                <span class="topnav__hamburger" aria-hidden="true">
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                </span>
+            </button>
+
+            <nav class="topnav__nav" id="primary-nav" aria-label="Primary navigation">
+                <ul class="topnav_links">
+                    <li class="topnav__item">
+                        <a href="../../index.html" class="topnav__link">Home</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../../projects/index.html" class="topnav__link">Projects</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../../about.html" class="topnav__link">About</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../index.html" class="topnav__link topnav__link--active" aria-current="page">Blog</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../../contact.html" class="topnav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="topnav__actions">
+                    <a href="https://github.com/joyy-dev" target="_blank" rel="noopener noreferrer" class="topnav__cta">
+                        Github
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="topnav__backdrop" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+        <div class="wrapper">
+            <article class="article-container">
+                <a href="../index.html" class="article-back">← Back to Blog</a>
+
+                <header class="article-header">
+                    <span class="article-category">Engineering Case Study</span>
+                    <h1 class="article-title">5 Hard-Earned Lessons from Building Taskify</h1>
+                    
+                    <div class="article-meta">
+                        <span>By Joyce (joyy_dev)</span>
+                        <span>•</span>
+                        <span>Published November 2026</span>
+                        <span>•</span>
+                        <span>6 min read</span>
+                    </div>
+
+                    <img src="../../assets/images/projects/taskify.webp" alt="Taskify application preview" class="article-hero-img">
+                </header>
+
+                <div class="article-content">
+                    <p>
+                        Building a task management app sounds like the standard developer rite of passage. But turning a simple to-do list into a fluid, tactile product that users genuinely want to return to every morning taught me invaluable lessons about mobile UX and Flutter performance.
+                    </p>
+
+                    <h2>1. Micro-Interactions Make or Break Mobile Retention</h2>
+                    <p>
+                        The difference between an app that feels like a webpage wrapped in a webview and a truly native experience comes down to milliseconds. Adding subtle haptic ticks when checking off an item and physics-based spring dampening to list dismissals increased tester satisfaction immediately.
+                    </p>
+
+                    <h2>2. Offline-First Is Not Optional</h2>
+                    <p>
+                        Users check off tasks on the subway, in airplanes, and in rural areas. If your app displays a blocking spinner because of network latency, users close it. By using local embedded persistence with Isar DB and running background synchronization, the interface responds in 0 milliseconds.
+                    </p>
+
+                    <h2>3. Avoid Unnecessary Rebuilds with RepaintBoundary</h2>
+                    <p>
+                        During complex animations, wrapping dynamic list items in <code>RepaintBoundary</code> prevents the entire screen from re-rasterizing, locking in 60 and 120 FPS performance even on low-end hardware.
+                    </p>
+
+                    <div class="article-callout">
+                        <p><strong>Conclusion:</strong> Focus intensely on the core 3 actions your user performs 90% of the time. Make those actions fast, tactile, and bug-free.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper" style="text-align: center; padding-block: 3rem; border-top: 1px solid rgba(168, 154, 255, 0.12); color: var(--c-muted); font-size: 0.875rem;">
+            <p>&copy; 2026 joyy_dev. Built with Flutter passion and clean design.</p>
+        </div>
+    </footer>
+</body>
+</html>

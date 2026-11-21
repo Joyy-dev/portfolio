@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalFixers Case Study · joyy_dev</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/projects.css">
+    <script src="../assets/js/main.js" defer></script>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml"/>
+</head>
+<body>
+    <a class="visually-hidden skip-link" href="#main">Skip to main content</a>
+
+    <header class="topnav" id="header">
+        <div class="wrapper topnav__wrapper">
+            <a href="../index.html" class="topnav__home" aria-label="joyy-dev homepage">
+                <img src="../assets/icons/joyy-dev-wordmark.svg" alt="joyy-dev logo" class="topnav__logo" width="150" height="34">
+            </a>
+
+            <button class="topnav__toggle" 
+                    type="button" 
+                    aria-label="Open navigation menu" 
+                    aria-expanded="false" 
+                    aria-controls="primary-nav">
+                <span class="topnav__hamburger" aria-hidden="true">
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                    <span class="topnav__hamburger-line"></span>
+                </span>
+            </button>
+
+            <nav class="topnav__nav" id="primary-nav" aria-label="Primary navigation">
+                <ul class="topnav_links">
+                    <li class="topnav__item">
+                        <a href="../index.html" class="topnav__link">Home</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="index.html" class="topnav__link topnav__link--active" aria-current="page">Projects</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../about.html" class="topnav__link">About</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../blog/index.html" class="topnav__link">Blog</a>
+                    </li>
+                    <li class="topnav__item">
+                        <a href="../contact.html" class="topnav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="topnav__actions">
+                    <a href="https://github.com/joyy-dev" target="_blank" rel="noopener noreferrer" class="topnav__cta">
+                        Github
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="topnav__backdrop" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+        <div class="wrapper">
+            <article class="case-study">
+                <a href="index.html" class="case-study__back">← Back to All Projects</a>
+
+                <header class="case-study__header">
+                    <span class="case-study__badge">On-Demand Service Platform</span>
+                    <h1 class="case-study__title">LocalFixers: Connecting Homeowners with Trusted Techs</h1>
+                    <p class="case-study__lead">
+                        An end-to-end mobile service marketplace built with Flutter, Firebase Auth, Cloud Firestore, and real-time geolocation matching.
+                    </p>
+
+                    <div class="case-study__meta">
+                        <div class="case-study__meta-item">
+                            <h4>Role</h4>
+                            <p>Mobile App Developer / UI</p>
+                        </div>
+                        <div class="case-study__meta-item">
+                            <h4>Tech Stack</h4>
+                            <p>Flutter, Dart, Firebase, Google Maps</p>
+                        </div>
+                        <div class="case-study__meta-item">
+                            <h4>Platform</h4>
+                            <p>iOS & Android</p>
+                        </div>
+                    </div>
+                </header>
+
+                <img src="../assets/images/projects/localfixers.webp" alt="LocalFixers interface screens" class="case-study__hero-img">
+
+                <div class="case-study__content">
+                    <h2>Project Overview</h2>
+                    <p>
+                        Finding reputable home repair professionals is often stressful, opaque, and slow. LocalFixers solves this by streamlining service requests, verified worker matching, instant in-app messaging, and clear pricing upfront.
+                    </p>
+
+                    <h2>Key Features & Architecture</h2>
+                    <ul>
+                        <li><strong>Geo-radius Discovery:</strong> Utilizes geofire queries to find nearby plumbers, electricians, and carpenters in sub-second response times.</li>
+                        <li><strong>Real-Time Booking State:</strong> Seamless status lifecycle (Requested, Accepted, En Route, In Progress, Completed) synchronized via Firestore streams.</li>
+                        <li><strong>Review & Verification System:</strong> Transparent identity verification and post-job review mechanism to foster user trust.</li>
+                    </ul>
+
+                    <h2>Technical Highlights</h2>
+                    <p>
+                        Architected using feature-first directory layout and BLoC pattern for deterministic state handling across complex booking flows and offline network reconnects.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper" style="text-align: center; padding-block: 3rem; border-top: 1px solid rgba(168, 154, 255, 0.12); color: var(--c-muted); font-size: 0.875rem;">
+            <p>&copy; 2026 joyy_dev. Built with Flutter passion and clean design.</p>
+        </div>
+    </footer>
+</body>
+</html>
